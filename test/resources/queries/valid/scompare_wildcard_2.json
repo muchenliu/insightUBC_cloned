@@ -1,0 +1,84 @@
+{
+	"title": "string compare wildcard head and tail",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_dept": "cpsc"
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "*kp*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_year",
+				"sections_id",
+				"sections_avg",
+				"sections_instructor"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_year": 2014,
+			"sections_id": "420",
+			"sections_avg": 78.32,
+			"sections_instructor": "kirkpatrick, david"
+		},
+		{
+			"sections_year": 2009,
+			"sections_id": "420",
+			"sections_avg": 68.77,
+			"sections_instructor": "kirkpatrick, david"
+		},
+		{
+			"sections_year": 2013,
+			"sections_id": "420",
+			"sections_avg": 69.35,
+			"sections_instructor": "kirkpatrick, david"
+		},
+		{
+			"sections_year": 2011,
+			"sections_id": "420",
+			"sections_avg": 72.46,
+			"sections_instructor": "kirkpatrick, david"
+		},
+		{
+			"sections_year": 2010,
+			"sections_id": "420",
+			"sections_avg": 69.58,
+			"sections_instructor": "kirkpatrick, david"
+		},
+		{
+			"sections_year": 2012,
+			"sections_id": "420",
+			"sections_avg": 70.93,
+			"sections_instructor": "kirkpatrick, david"
+		},
+		{
+			"sections_year": 2012,
+			"sections_id": "445",
+			"sections_avg": 73.88,
+			"sections_instructor": "kirkpatrick, bonnie;manuch, jan"
+		},
+		{
+			"sections_year": 2014,
+			"sections_id": "500",
+			"sections_avg": 78.87,
+			"sections_instructor": "kirkpatrick, david"
+		},
+		{
+			"sections_year": 2007,
+			"sections_id": "500",
+			"sections_avg": 81.25,
+			"sections_instructor": "kirkpatrick, david"
+		}
+	]
+}

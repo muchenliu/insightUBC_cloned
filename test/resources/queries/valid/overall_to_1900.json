@@ -1,0 +1,60 @@
+{
+  "title": "overall to 1900",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "sections_dept": "dani"
+          }
+        },
+        {
+          "IS": {
+            "sections_id": "200"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_uuid",
+        "sections_year"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "sections_uuid": "75240",
+      "sections_year": 2013
+    },
+    {
+      "sections_uuid": "75241",
+      "sections_year": 1900
+    },
+    {
+      "sections_uuid": "75424",
+      "sections_year": 2016
+    },
+    {
+      "sections_uuid": "75425",
+      "sections_year": 1900
+    },
+    {
+      "sections_uuid": "87231",
+      "sections_year": 2014
+    },
+    {
+      "sections_uuid": "87232",
+      "sections_year": 1900
+    },
+    {
+      "sections_uuid": "96309",
+      "sections_year": 2015
+    },
+    {
+      "sections_uuid": "96310",
+      "sections_year": 1900
+    }
+  ]
+}

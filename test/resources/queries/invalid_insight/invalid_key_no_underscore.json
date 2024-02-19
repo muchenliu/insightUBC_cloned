@@ -1,0 +1,19 @@
+{
+	"title": "invalid key: not idstring_field",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_instructor": "j*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sectionsavg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

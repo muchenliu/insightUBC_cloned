@@ -1,0 +1,13 @@
+{
+	"title": "Query missing WHERE",
+	"input": {
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_uuid",
+				"sections_year"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

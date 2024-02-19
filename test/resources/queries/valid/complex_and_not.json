@@ -1,0 +1,57 @@
+{
+	"title": "complex- And not",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"NOT": {
+						"LT": {
+							"sections_avg": 10
+						}
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "ik*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg",
+				"sections_instructor"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "soci",
+			"sections_avg": 71.46,
+			"sections_instructor": "ikebuchi, shelly"
+		},
+		{
+			"sections_dept": "soci",
+			"sections_avg": 73,
+			"sections_instructor": "ikebuchi, shelly"
+		},
+		{
+			"sections_dept": "soci",
+			"sections_avg": 73.15,
+			"sections_instructor": "ikebuchi, shelly"
+		},
+		{
+			"sections_dept": "soci",
+			"sections_avg": 74.32,
+			"sections_instructor": "ikebuchi, shelly"
+		},
+		{
+			"sections_dept": "soci",
+			"sections_avg": 78.67,
+			"sections_instructor": "ikebuchi, shelly"
+		}
+	]
+}

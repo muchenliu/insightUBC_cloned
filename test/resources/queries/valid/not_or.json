@@ -1,0 +1,321 @@
+{
+	"title": "complex- and not or",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"NOT": {
+						"OR": [
+							{
+								"GT": {
+									"sections_avg": 90
+								}
+							},
+							{
+								"IS": {
+									"sections_dept": "c*"
+								}
+							}
+						]
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "cl*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg",
+				"sections_instructor"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "math",
+			"sections_avg": 62.3,
+			"sections_instructor": "clarkson, james"
+		},
+		{
+			"sections_dept": "phil",
+			"sections_avg": 62.66,
+			"sections_instructor": "clarke, roger;margolis, eric;viera, gerardo alberto"
+		},
+		{
+			"sections_dept": "math",
+			"sections_avg": 65.02,
+			"sections_instructor": "clarkson, james"
+		},
+		{
+			"sections_dept": "math",
+			"sections_avg": 65.9,
+			"sections_instructor": "cladek, laura"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 66.53,
+			"sections_instructor": "clark, luke"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 68.06,
+			"sections_instructor": "clark, luke"
+		},
+		{
+			"sections_dept": "mech",
+			"sections_avg": 69.09,
+			"sections_instructor": "clark, randal j"
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 70.01,
+			"sections_instructor": "clark, luke"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 71.11,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 71.87,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "mech",
+			"sections_avg": 71.9,
+			"sections_instructor": "clark, randal j;ribarits, stephen"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 72.23,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 72.97,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 73.55,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 74.4,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "arth",
+			"sections_avg": 74.56,
+			"sections_instructor": "clark, leah"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 75.14,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 76.03,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 76.14,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "fren",
+			"sections_avg": 76.3,
+			"sections_instructor": "clain, heloise"
+		},
+		{
+			"sections_dept": "biol",
+			"sections_avg": 76.33,
+			"sections_instructor": "close, david"
+		},
+		{
+			"sections_dept": "japn",
+			"sections_avg": 76.56,
+			"sections_instructor": "clerici, nathen"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 76.68,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 77.52,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 77.55,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 77.88,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "biol",
+			"sections_avg": 78.08,
+			"sections_instructor": "close, david"
+		},
+		{
+			"sections_dept": "fren",
+			"sections_avg": 78.24,
+			"sections_instructor": "clain, heloise"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 78.53,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "biol",
+			"sections_avg": 78.58,
+			"sections_instructor": "close, david"
+		},
+		{
+			"sections_dept": "fren",
+			"sections_avg": 79.05,
+			"sections_instructor": "clain, heloise"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 80.11,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 80.47,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 80.79,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "larc",
+			"sections_avg": 81.43,
+			"sections_instructor": "clarke, steven"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 81.63,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "lled",
+			"sections_avg": 81.79,
+			"sections_instructor": "clark, hazel;paul, karin"
+		},
+		{
+			"sections_dept": "frst",
+			"sections_avg": 82.13,
+			"sections_instructor": "cleary, michelle"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 82.29,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 83.04,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "sowk",
+			"sections_avg": 84.23,
+			"sections_instructor": "clark, natalie"
+		},
+		{
+			"sections_dept": "biol",
+			"sections_avg": 84.27,
+			"sections_instructor": "close, david"
+		},
+		{
+			"sections_dept": "food",
+			"sections_avg": 84.5,
+			"sections_instructor": "cliff, margaret anne"
+		},
+		{
+			"sections_dept": "food",
+			"sections_avg": 84.57,
+			"sections_instructor": "cliff, margaret anne"
+		},
+		{
+			"sections_dept": "biol",
+			"sections_avg": 84.85,
+			"sections_instructor": "close, david"
+		},
+		{
+			"sections_dept": "food",
+			"sections_avg": 84.86,
+			"sections_instructor": "cliff, margaret anne;madadi noei, azita"
+		},
+		{
+			"sections_dept": "sowk",
+			"sections_avg": 84.87,
+			"sections_instructor": "clark, natalie;o'connor, deborah;o'neill, brian;stainton, timothy;tester, frank"
+		},
+		{
+			"sections_dept": "lled",
+			"sections_avg": 84.9,
+			"sections_instructor": "clark, hazel;paul, karin"
+		},
+		{
+			"sections_dept": "food",
+			"sections_avg": 85.29,
+			"sections_instructor": "cliff, margaret anne"
+		},
+		{
+			"sections_dept": "food",
+			"sections_avg": 85.43,
+			"sections_instructor": "cliff, margaret anne;madadi noei, azita"
+		},
+		{
+			"sections_dept": "sowk",
+			"sections_avg": 85.9,
+			"sections_instructor": "clark, natalie;jamieson, ally;jones, elizabeth"
+		},
+		{
+			"sections_dept": "sowk",
+			"sections_avg": 87.47,
+			"sections_instructor": "clark, natalie"
+		},
+		{
+			"sections_dept": "food",
+			"sections_avg": 87.57,
+			"sections_instructor": "cliff, margaret anne"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 87.6,
+			"sections_instructor": "claxton, dana"
+		},
+		{
+			"sections_dept": "frst",
+			"sections_avg": 88.6,
+			"sections_instructor": "cleary, michelle"
+		},
+		{
+			"sections_dept": "visa",
+			"sections_avg": 88.67,
+			"sections_instructor": "claxton, dana"
+		}
+	]
+}

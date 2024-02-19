@@ -1,0 +1,29 @@
+{
+  "title": "underscore id - yea_r(invalid)",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "sections_dept": "cpsc"
+          }
+        },
+        {
+          "IS": {
+            "sections_instructor": "k*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_yea_r",
+        "sections_id",
+        "sections_avg",
+        "sections_instructor"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

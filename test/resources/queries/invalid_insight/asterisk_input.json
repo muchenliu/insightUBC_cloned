@@ -1,0 +1,29 @@
+{
+  "title": "asterisk not in middle",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "sections_dept": "cpsc"
+          }
+        },
+        {
+          "IS": {
+            "sections_instructor": "k*a"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_year",
+        "sections_id",
+        "sections_avg",
+        "sections_instructor"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

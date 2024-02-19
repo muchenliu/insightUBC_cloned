@@ -1,0 +1,19 @@
+{
+  "title": "valid but zero result",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "sections_instructor": "C*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_dept",
+        "sections_avg"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": []
+}

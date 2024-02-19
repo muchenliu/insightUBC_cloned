@@ -1,0 +1,19 @@
+{
+  "title": "Reference Multiple Datasets edge case",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "sections_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_avg",
+        "ubc_dept"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}
